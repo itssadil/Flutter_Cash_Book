@@ -3,6 +3,7 @@ import 'package:tradebook/login/logInPage.dart';
 import 'package:flutter/services.dart';
 
 void main() {
+  // disable Landscape mode
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
     [
@@ -10,6 +11,7 @@ void main() {
       DeviceOrientation.portraitDown,
     ],
   );
+  // MyApp
   runApp(const MyApp());
 }
 
